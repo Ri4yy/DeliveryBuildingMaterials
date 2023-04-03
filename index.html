@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="/DeliveryBuildingMaterials/src/assets/img/icon/logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./src/assets/css/custom.css">
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <title>Доставка стройматериалов</title>
+</head>
+
+<body class="text-darkBlue overflow-x-hidden font-inter">
+    <header class="flex items-center justify-between py-[26px] px-8" id="main">
+        <div class="logo flex items-center gap-2">
+            <img src="/DeliveryBuildingMaterials/src/assets/img/icon/logo.png" alt="">
+            <span class="text-[22px]">СтройКонтроль</span>
+        </div>
+        <nav class="flex items-center gap-[22px]">
+            <ul class="nav_list min-[1100px]:flex hidden min-[1100px]:flex-row min-[1100px]:relative min-[1100px]:text-base text-lg absolute min-[1100px]:h-fit h-screen bg-[#fff] right-0 top-[96px] min-[1100px]:top-auto w-[80%] min-[1100px]:w-fit min-[1100px]:bg-transparent flex-col items-start min-[1100px]:items-center min-[1100px]:pt-0 min-[1100px]:pl-0 pt-10 md:pt-20 pl-10 md:pl-20 min-[1100px]:gap-[22px] z-40 gap-5" id="menu">
+                <li><a href="#main" class="hover:text-[#036FC7] text-secondary relative after:w-0 after:h-[2px] after:absolute after:-bottom-1 after:left-0 after:bg-[#036FC7] hover:after:w-full after:transition-all after:duration-300">Главная</a></li>
+                <li><a href="#about" class="hover:text-[#036FC7] text-secondary relative after:w-0 after:h-[2px] after:absolute after:-bottom-1 after:left-0 after:bg-[#036FC7] hover:after:w-full after:transition-all after:duration-300">О нас</a></li>
+                <li><a href="#production" class="hover:text-[#036FC7] text-secondary relative after:w-0 after:h-[2px] after:absolute after:-bottom-1 after:left-0 after:bg-[#036FC7] hover:after:w-full after:transition-all after:duration-300">Продукция</a></li>
+                <li><a href="#process" class="hover:text-[#036FC7] text-secondary relative after:w-0 after:h-[2px] after:absolute after:-bottom-1 after:left-0 after:bg-[#036FC7] hover:after:w-full after:transition-all after:duration-300">Процесс</a></li>
+                <li><a href="#reliability" class="hover:text-[#036FC7] text-secondary relative after:w-0 after:h-[2px] after:absolute after:-bottom-1 after:left-0 after:bg-[#036FC7] hover:after:w-full after:transition-all after:duration-300">Надежность</a></li>
+                <li><a href="#clients" class="hover:text-[#036FC7] text-secondary relative after:w-0 after:h-[2px] after:absolute after:-bottom-1 after:left-0 after:bg-[#036FC7] hover:after:w-full after:transition-all after:duration-300">Клиенты</a></li>
+                <li><a href="#connection" class="hover:text-[#036FC7] text-secondary relative after:w-0 after:h-[2px] after:absolute after:-bottom-1 after:left-0 after:bg-[#036FC7] hover:after:w-full after:transition-all after:duration-300">Связаться с нами</a></li>
+            </ul>
+            <button class="header_order text-[#fff] hover:text-darkBlue hover:bg-[#fff] border-[1px] border-darkBlue transition-all duration-300 bg-darkBlue px-5 py-2 rounded-[4px] xs:flex hidden">Заказать демо</button>
+            <img src="/DeliveryBuildingMaterials/src/assets/img/icon/menu.png" alt="" id="openMenu" class="w-auto h-auto min-[1100px]:hidden flex z-40">
+        </nav>
+    </header>
+
+    <div class="hidden h-screen w-full z-30 bg-[#272525]/80 absolute top-[96px] left-0" id="overlay"></div>
+
+    <section class="container flex flex-col items-center mt-[74px] overflow-x-hidden" id="">
+        <h1 class="main_title lg:text-5xl md:text-4xl text-2xl text-darbg-darkBlue md:leading-[64px] text-center">Умная доставка материалов для <span class="block">сложных строительных площадок</span></h1>
+        <div class="main-btn_group flex xs:flex-row flex-col gap-4 mt-[30px] w-full justify-center">
+            <a href="#" class="flex justify-center text-[#fff] hover:text-darkBlue hover:bg-[#fff] border-[1px] border-darkBlue transition-all duration-300 bg-darkBlue px-6 py-3 rounded-[4px] xs:w-fit w-full">Заказать демо</a>
+            <a href="#" class="flex justify-center text-darkBlue hover:text-[#fff] hover:bg-darkBlue transition-all duration-300 bg-transparent px-6 py-3 rounded-[4px] border border-[#DADEDF] xs:w-fit w-full">Подробнее</a>
+        </div>
+        <img src="/DeliveryBuildingMaterials/src/assets/img/bg/hero.png" alt="" class="hero_png mt-[88px]">
+        <img src="/DeliveryBuildingMaterials/src/assets/img/bg/bg2.png" alt="" class="train_png mt-9">
+    </section>
+
+    <section class="container lg:pt-[144px] md:pt-[100px] pt-16 grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-10 overflow-x-hidden" id="hero">
+        <div class="flex flex-col items-center">
+            <img src="/DeliveryBuildingMaterials/src/assets/img/icon/effect.svg" alt="" class="hero_img">
+            <span class="text-lg mt-5 text-center hero_title">Повышение эффективности</span>
+            <p class="mt-[10px] text-secondary text-center leading-6 grow hero_title">Эффективные проекты стоят дешевле и завершаются в срок.</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="/DeliveryBuildingMaterials/src/assets/img/icon/loses.svg" alt="" class="hero_img">
+            <span class="text-lg mt-5 text-center hero_title">Снижение потерь</span>
+            <p class="mt-[10px] text-secondary text-center leading-6 grow hero_title">Тщательно отслеживайте движение стройматериалов, чтобы избежать краж и повреждений.</p>
+        </div>
+        <div class="flex flex-col items-center xs:col-span-2 md:col-span-1">
+            <img src="/DeliveryBuildingMaterials/src/assets/img/icon/safety.svg" alt="" class="hero_img">
+            <span class="text-lg mt-5 text-center hero_title">Повышение безопасности</span>
+            <p class="mt-[10px] text-secondary text-center leading-6 grow hero_title">Обеспечьте здоровье и благополучие людей, работающих на вашей площадке.</p>
+        </div>
+    </section>
+
+    <section class="container lg:pt-[144px] md:pt-[100px] pt-16 overflow-x-hidden" id="chaos">
+        <h2 class="chaos_title title text-center">Строительство - это хаос</h2>
+        <p class="mt-4 text-center text-xl text-secondary chaos_subtitle">Хаос может быть удивительной творческой силой, воздвигающая новые здания из пыли.
+           <span class="block">Хаос вызывает несчастные случаи, задержки и потери. Он вводит проекты в стресс и разочарование.</span>
+            Это означает, что вы действительно не контролируете ситуацию.</p>
+        <img src="/DeliveryBuildingMaterials/src/assets/img/photo/chaos.png" alt="" class="chaos_img mt-10">
+    </section>
+
+    <section class="container lg:pt-[144px] md:pt-[100px] pt-16 overflow-x-hidden" id="delivery">
+        <h2 class="delivery_title title text-center lg:pb-[168px] md:pb-[120px] pb-20">Пора навести порядок на вашей стройплощадке и взять под контроль свой проект</h2>
+        <div class="flex md:flex-row flex-col md:gap-0 gap-y-5" id="delivery_wrapper">
+            <div class="flex flex-col grow">
+                <h2 class="delivery_subtitle title">Мы заботимся о доставке на стройплощадку и о людях, которые на них рассчитывают</h2>
+                <p class="delivery_text text-xl mt-4 text-secondary">Мы знаем всё о гордости от сияющего нового здания. Нам также известно всё о разочаровании от попыток завершить проект в срок и в рамках бюджета.</p>
+                <a href="#" class="delivery_link text-xl mt-7 w-fit relative after:bg-[#FFD042] after:absolute after:left-0 after:-bottom-1 after:h-4 after:w-full after:-z-10">Мы здесь, чтобы помочь.</a>
+            </div>
+            <img src="/DeliveryBuildingMaterials/src/assets/img/photo/help.png" alt="" class="delivery_img grow">
+        </div>
+    </section>
+
+    <section class="container py-[56px] my-[72px] grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 items-center justify-center gap-x-10 gap-y-[10px] border-t-[1px] border-b-[1px] border-[#EEF2F3] overflow-x-hidden" id="partners">
+        <img src="/DeliveryBuildingMaterials/src/assets/img/partners/besix.png" alt="" class="partner_img">
+        <img src="/DeliveryBuildingMaterials/src/assets/img/partners/six.png" alt="" class="partner_img">
+        <img src="/DeliveryBuildingMaterials/src/assets/img/partners/echo.png" alt="" class="partner_img">
+        <img src="/DeliveryBuildingMaterials/src/assets/img/partners/kajima.png" alt="" class="partner_img">
+        <img src="/DeliveryBuildingMaterials/src/assets/img/partners/lafarge.png" alt="" class="partner_img">
+        <img src="/DeliveryBuildingMaterials/src/assets/img/partners/skanska.png" alt="" class="partner_img lg:col-start-3 lg:col-end-4">
+    </section>
+
+    <section class="container overflow-x-hidden" id="whatIsIt">
+        <h2 class="whatIsIt_title title text-center">Что такое СтройКонтроль?</h2>
+        <p class="whatIsIt_text mt-5 text-center text-xl text-secondary">СтройКонтроль - это интеллектуальная система управления доставкой, 
+           <span class="block">предоставляющая информацию и контроль материалов на сложных строительных</span> 
+           площадках в режиме реального времени.
+        </p>
+        <div class="flex flex-col gap-y-16 mt-7">
+            <div class="whats_block flex md:flex-row flex-col gap-x-[90px] gap-y-5">
+                <div class="flex flex-col justify-center md:w-[45%]">
+                    <span class="text-lg text-center xs:text-start">Отслеживайте доставку по всей цепочке поставок</span>
+                    <p class="text-[#72787D] mt-5">От поставщика до субподрядчика - вы всегда знаете, где находятся ваши материалы, благодаря чему обычные отходы уходят 
+                        в прошлое и сокращаются несчастные случаи на месте.</p>
+                </div>
+                <img src="/DeliveryBuildingMaterials/src/assets/img/photo/delivery.png" alt="">
+            </div>
+            <div class="whats_block flex md:flex-row flex-col justify-end gap-x-[90px] gap-y-5">
+                <img src="/DeliveryBuildingMaterials/src/assets/img/photo/place.png" alt="" class="order-2 md:order-1">
+                <div class="flex flex-col justify-center md:w-[45%] order-1 md:order-2">
+                    <span class="text-lg text-center xs:text-start">Оптимизируйте и контролируйте свое прибытие на место</span>
+                    <p class="text-[#72787D] mt-5">Транспортные средства доставки прибывают в фиксированные промежутки времени в заранее 
+                        назначенные отсеки, где разгрузочное оборудование готово и ждет их.</p>
+                </div>
+            </div>
+            <div class="whats_block flex md:flex-row flex-col gap-x-[30px] gap-y-5">
+                <div class="flex flex-col justify-center md:w-[46%]">
+                    <span class="text-lg text-center xs:text-start">Возьмите под контроль данные в режиме реального времени</span>
+                    <p class="text-[#72787D] mt-5">Интеллектуальная отчетность дает вам возможность принимать решения в зависимости от того, 
+                        как обстоят дела в данный момент. Больше никаких ручных отчетов по заливке бетона или ежемесячной проверки 10.000 
+                        накладных со счетами, все это доступно онлайн без каких-либо усилий.</p>
+                </div>
+                <img src="/DeliveryBuildingMaterials/src/assets/img/photo/control.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="container lg:pt-[144px] md:pt-[100px] pt-16" id="production">
+        <h2 class="production_title title text-center">Доставка стала проще</h2>
+        <p class="production_text mt-5 text-center text-xl text-secondary">Мы позаботимся обо всех ваших различных поставках и их 
+            <span class="block">многочисленных специализированных требованиях к разгрузке.</span>
+        </p>
+        <div class="flex flex-col mt-10">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-x-7 gap-y-8">
+                <div class="production_item flex items-start gap-4">
+                    <img src="/DeliveryBuildingMaterials/src/assets/img/icon/Frame.svg" alt="">
+                    <div class="flex flex-col">
+                        <span class="text-lg">Бетон</span>
+                        <p class="mt-3 text-secondary">Поставки бетона точно планируются, а его состояние контролируется, что обеспечивает максимально возможное время для 
+                            установки.</p>
+                    </div>
+                </div>
+                <div class="production_item flex items-start gap-4">
+                    <img src="/DeliveryBuildingMaterials/src/assets/img/icon/Waste removal.svg" alt="">
+                    <div class="flex flex-col">
+                        <span class="text-lg">Утилизация отходов</span>
+                        <p class="mt-3 text-secondary">Отходы контролируются и сортируются, а заполненность контейнеров отслеживается в цифровом виде.</p>
+                    </div>
+                </div>
+                <div class="production_item flex items-start gap-4">
+                    <img src="/DeliveryBuildingMaterials/src/assets/img/icon/Formwork.svg" alt="">
+                    <div class="flex flex-col">
+                        <span class="text-lg">Опалубка</span>
+                        <p class="mt-3 text-secondary">Вся опалубка отслеживается от прибытия до отправления, а ее состояние контролируется, что сводит к минимуму потери и повреждения.</p>
+                    </div>
+                </div>
+                <div class="production_item flex items-start gap-4">
+                    <img src="/DeliveryBuildingMaterials/src/assets/img/icon/Precasts.svg" alt="">
+                    <div class="flex flex-col">
+                        <span class="text-lg">Сборные панели</span>
+                        <p class="mt-3 text-secondary">Сборные панели прибывают по очереди, их хранение на месте отслеживается, а их установка планируется и контролируется.</p>
+                    </div>
+                </div>
+                <div class="production_item flex items-start gap-4">
+                    <img src="/DeliveryBuildingMaterials/src/assets/img/icon/Facades.svg" alt="">
+                    <div class="flex flex-col">
+                        <span class="text-lg">Фасады</span>
+                        <p class="mt-3 text-secondary">Элементы фасада поступают последовательно, их сборка контролируется, а перемещение отслеживается.</p>
+                    </div>
+                </div>
+                <div class="production_item flex items-start gap-4">
+                    <img src="/DeliveryBuildingMaterials/src/assets/img/icon/finish.svg" alt="">
+                    <div class="flex flex-col">
+                        <span class="text-lg">Отделка</span>
+                        <p class="mt-3 text-secondary">Материалы поступают точно в срок, маркируются и детально отслеживаются для установки.</p>
+                    </div>
+                </div>
+                <div class="production_item flex items-start gap-4">
+                    <img src="/DeliveryBuildingMaterials/src/assets/img/icon/Scaffolding.svg" alt="">
+                    <div class="flex flex-col">
+                        <span class="text-lg">Строительные леса</span>
+                        <p class="mt-3 text-secondary">Строительные леса отслеживаются от получения до хранения, использования и возврата, поэтому всегда ясно, что на месте и где.</p>
+                    </div>
+                </div>
+                <div class="production_item flex items-start gap-4">
+                    <img src="/DeliveryBuildingMaterials/src/assets/img/icon/Frame-1.svg" alt="">
+                    <div class="flex flex-col">
+                        <span class="text-lg">Оборудование</span>
+                        <p class="mt-3 text-secondary">Оборудование и операторы гарантированно доступны в случае необходимости, а их рабочее состояние отслеживается.</p>
+                    </div>
+                </div>
+                <div class="production_item flex items-start gap-4">
+                    <img src="/DeliveryBuildingMaterials/src/assets/img/icon/MEP.svg" alt="">
+                    <div class="flex flex-col">
+                        <span class="text-lg">Электрика и сантехника</span>
+                        <p class="mt-3 text-secondary">Доставка осуществляется в точной последовательности для сложной установки, что сокращает или устраняет необходимость в хранении.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="production_link mt-6 text-center">... <span class="text-xl mt-7 w-fit relative after:bg-[#FFD042] after:absolute after:left-0 after:-bottom-[5px] after:h-4 after:w-full after:-z-10">и все остальные материалы,</span><span class="text-secondary text-xl"> которые поступают или покидают вашу площадку</span></p>
+        </div>
+    </section>
+
+    <section class="container lg:pt-[144px] md:pt-[100px] pt-16 overflow-x-hidden" id="reliability">
+        <h2 class="reliability_title title text-center">Надёжность</h2>
+        <p class="reliability_text mt-5 text-center text-xl text-secondary">Благодаря надёжному строительству выигрывают все - муниципальные органы 
+            <span class="lg:block">выполняют свои обязанности перед гражданами, инвесторы получают сертификаты </span> 
+            своих проектов, а генеральные подрядчики получают повышенную репутацию.
+        </p>
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-12 mb-16">
+            <div class="reliability_item grid justify-items-center">
+                <img src="/DeliveryBuildingMaterials/src/assets/img/icon/co2.svg" alt="">
+                <span class="mt-[18px] text-lg text-center">Сниженное загрязнение</span>
+                <p class="text-secondary mt-[10px] text-center">При оптимизации логистики требуется меньше поездок, что приводит к снижению выбросов CO2. Выбрасываемый CO2 контролируется, что позволяет ставить цели и вносить ощутимые улучшения.</p>
+            </div>
+            <div class="reliability_item grid justify-items-center">
+                <img src="/DeliveryBuildingMaterials/src/assets/img/icon/waste.svg" alt="">
+                <span class="mt-[18px] text-lg text-center">Улучшенное управление отходами</span>
+                <p class="text-secondary mt-[10px] text-center">Упрощается сортировка отходов, автоматизируется утилизация отходов, а поврежденные материалы при необходимости используются повторно, что снижает затраты и стимулирует переработку и повторное использование.</p>
+            </div>
+            <div class="reliability_item grid justify-items-center md:col-span-2 lg:col-span-1">
+                <img src="/DeliveryBuildingMaterials/src/assets/img/icon/society.svg" alt="">
+                <span class="mt-[18px] text-lg text-center">Улучшенное влияние на общество</span>
+                <p class="text-secondary mt-[10px] text-center">Уменьшаются проблемы с дорожным движением и шумовое загрязнение, что улучшает жизнь местного сообщества. Улучшенное обращение с материалами и хранение означает, что рабочие также лучше защищены.</p>
+            </div>
+        </div>
+        <div class="flex md:flex-row flex-col justify-between xs:px-10 xs:py-[45px] p-5 bg-[#F6F8F9] rounded-[5px] gap-y-5">
+            <div class="flex xs:flex-row flex-col items-center gap-6">
+                <img src="/DeliveryBuildingMaterials/src/assets/img/icon/set.svg" alt="">
+                <span class="text-lg text-center xs:text-start"><span class="font-medium">Надёжная конструкция</span> СтройКонтроль входит в стандартную комплектацию.</span>
+            </div>
+            <a href="#" class="flex justify-center px-6 py-4 text-lg bg-[#fff] rounded-[4px] border-[1px] border-[#DADEDF] hover:bg-[#F6F8F9] transition-all duration-300">Подробнее</a>
+        </div>
+    </section>
+
+    <section class="bg-darkBlue lg:pt-[144px] md:pt-[100px] pt-16 lg:pb-[118px] md:pb-[90px] pb-[50px] lg:mt-[144px] md:mt-[100px] mt-16 pl-5 min-[1096px]:pl-[calc((100%-1056px)/2)] overflow-x-hidden" id="clients">
+        <div class="flex flex-col">
+            <div class="flex lg:flex-row flex-col gap-[50px] lg:justify-between items-end">
+                <div class="flex flex-col xl:w-[47%] lg:w-[60%] md:pr-0 pr-5">
+                    <h2 class="clients_title text-[32px] text-[#fff]">Создан для строительства</h2>
+                    <ul class="flex flex-col gap-6 text-[#fff] mt-[50px]">
+                        <li class="clients_list flex flex-col gap-[10px] pl-10 relative before:w-2 before:h-2 before:rounded-full before:bg-[#fff] before:absolute before:left-0 before:top-3">
+                            <span class="text-lg">Хорошо виден в любых условиях</span>
+                            <p class="text-[#fff] opacity-70">Независимо от того, солнечно или темно, найдется подходящий режим экрана</p>
+                        </li>
+                        <li class="clients_list flex flex-col gap-[10px] pl-10 relative before:w-2 before:h-2 before:rounded-full before:bg-[#fff] before:absolute before:left-0 before:top-3">
+                            <span class="text-lg">Поддержка международных языков</span>
+                            <p class="text-[#fff] opacity-70">На современной стройке работают люди со всего мира. Язык не является проблемой для СтройКонтроля.</p>
+                        </li>
+                        <li class="clients_list flex flex-col gap-[10px] pl-10 relative before:w-2 before:h-2 before:rounded-full before:bg-[#fff] before:absolute before:left-0 before:top-3">
+                            <span class="text-lg">Работает на любом устройстве - мобильном телефоне, планшете, ноутбуке</span>
+                            <p class="text-[#fff] opacity-70">Люди на разных должностях используют разные устройства. 
+                                СтройКонтроль автоматически настраивается в соответствии с требованиями. 
+                                Вы также можете проецировать панели мониторинга живого проекта на настенные экраны.</p>
+                        </li>
+                    </ul>
+                    <div class="clients_list flex xs:flex-row flex-col gap-4 mt-[50px]">
+                        <a href="#" class="flex justify-center xs:w-fit w-full text-lg text-darkBlue hover:bg-darkBlue hover:text-[#fff] border-[1px] border-[#fff] transition-all duration-300 bg-[#fff] px-6 py-3 rounded-[4px]">Заказать демо</a>
+                        <a href="#" class="flex justify-center xs:w-fit w-full text-[#fff] hover:text-darkBlue hover:bg-[#fff] transition-all duration-300 text-lg bg-transparent px-6 py-3 rounded-[4px] border border-[#DADEDF]">Подробнее</a>
+                    </div>
+                </div>
+                <img src="/DeliveryBuildingMaterials/src/assets/img/photo/create.png" alt="" class="clients_img xl:w-[57%] lg:w-[40%] w-1/2 xs:flex hidden">
+            </div>
+            <div class="grid md:grid-cols-3 xs:grid-cols-2 gap-[18px] lg:mt-[127px] md:mt-[90px] mt-[50px] max-w-[1056px] pr-5">
+                <div class="clients_items grid justify-items-center">
+                    <img src="/DeliveryBuildingMaterials/src/assets/img/icon/subcontract.svg" alt="">
+                    <span class="mt-5 text-lg text-[#fff] text-center">Привлечение субподрядчика</span>
+                    <p class="text-[#fff] opacity-70 mt-[10px] text-center grow">Для выполнения этой работы вам понадобятся ваши субподрядчики. У нас есть проверенный и надежный процесс для этого.</p>
+                </div>
+                <div class="clients_items grid justify-items-center">
+                    <img src="/DeliveryBuildingMaterials/src/assets/img/icon/suppliers.svg" alt="">
+                    <span class="mt-5 text-lg text-[#fff] text-center">Привлечены ключевые поставщики</span>
+                    <p class="text-[#fff] opacity-70 mt-[10px] text-center grow">У нас уже есть ключевые поставщики, использующие программное обеспечение, что обеспечивает еще больший контроль и прозрачность информации.</p>
+                </div>
+                <div class="clients_items grid justify-items-center xs:col-span-2 col-span md:col-span-1">
+                    <img src="/DeliveryBuildingMaterials/src/assets/img/icon/100.svg" alt="">
+                    <span class="mt-5 text-lg text-[#fff] text-center">100% соответствие</span>
+                    <p class="text-[#fff] opacity-70 mt-[10px] text-center grow">У нас есть безупречный список обеспечения соответствия требованиям, которые необходимы вам для успешного выполнения проекта с помощью СтройКонтроль.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container lg:pt-[144px] md:pt-[100px] pt-16 overflow-x-hidden" id="process">
+        <div class="flex flex-col md:flex-row justify-between gap-[74px]">
+            <div class="flex flex-col md:w-[40%]">
+                <h2 class="process_title title">Как с нами работать</h2>
+                <p class="process_text text-xl text-secondary mt-5">Начать работу со СтройКонтроль легко, достаточно заказать демо-версию.</p>
+                <img src="/DeliveryBuildingMaterials/src/assets/img/photo/howwork.png" alt="" class="mt-[60px] w-[80%]">
+            </div>
+            <div class="flex flex-col md:w-1/2">
+                <ul class="flex flex-col gap-[30px]">
+                    <li class="process_items flex flex-col pl-[72px] relative before:h-10 before:w-10 before:rounded-[4px] before:border-[1px] before:border-[#DADEDF] before:absolute before:top-0 before:left-0 before:flex before:items-center before:justify-center before:text-secondary before:content-['1']">
+                        <span class="text-[17px]">Заказать демо</span>
+                        <p class="text-secondary mt-[10px]">Вы увидите презентацию, в которой подробно объясняется, как работает СтройКонтроль для решения задач строительной логистики в таких сложных проектах, как ваш.</p>
+                    </li>
+                    <li class="process_items flex flex-col pl-[72px] relative before:h-10 before:w-10 before:rounded-[4px] before:border-[1px] before:border-[#DADEDF] before:absolute before:top-0 before:left-0 before:flex before:items-center before:justify-center before:text-secondary before:content-['2']">
+                        <span class="text-[17px]">Согласование сделки</span>
+                        <p class="text-secondary mt-[10px]">Мы обсудим ваш строительный проект и предложим реализацию СтройКонтроль, которая идеально соответствует вашим потребностям и будет иметь для вас ценность.</p>
+                    </li>
+                    <li class="process_items flex flex-col pl-[72px] relative before:h-10 before:w-10 before:rounded-[4px] before:border-[1px] before:border-[#DADEDF] before:absolute before:top-0 before:left-0 before:flex before:items-center before:justify-center before:text-secondary before:content-['3']">
+                        <span class="text-[17px]">Подготовка</span>
+                        <p class="text-secondary mt-[10px]">Мы полностью обучаем вашу команду тому, как использовать систему, с помощью онлайн-видеоуроков и обеспечиваем постоянную всестороннюю поддержку.</p>
+                    </li>
+                    <li class="process_items flex flex-col pl-[72px] relative before:h-10 before:w-10 before:rounded-[4px] before:border-[1px] before:border-[#DADEDF] before:absolute before:top-0 before:left-0 before:flex before:items-center before:justify-center before:text-secondary before:content-['4']">
+                        <span class="text-[17px]">Внедрение и интеграция</span>
+                        <p class="text-secondary mt-[10px]">Мы настраиваем программное обеспечение так, чтобы оно точно моделировало вашу площадку, а затем помогаем вам интегрировать его с программным обеспечением Business Intelligence для получения новых мощных аналитических данных.</p>
+                    </li>
+                </ul>
+                <div class="process_items flex xs:flex-row flex-col xs:gap-[30px] gap-4 mt-[30px]">
+                    <a href="#" class="flex justify-center hover:text-darkBlue hover:bg-[#fff] border-[1px] border-darkBlue transition-all duration-300 text-[#fff] bg-darkBlue px-6 py-3 rounded-[4px] xs:w-fit w-full">Заказать демо</a>
+                    <a href="#" class="flex justify-center hover:text-[#fff] hover:bg-darkBlue transition-all duration-300 text-darkBlue bg-transparent px-6 py-3 rounded-[4px] border border-[#DADEDF] xs:w-fit w-full">Подробнее</a>     
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container pt-[96px] overflow-x-hidden" id="about">
+        <h2 class="about_title title text-center">Почему нужно выбрать нас?</h2>
+        <p class="about_text text-xl text-secondary mt-4 text-center">В строительной логистике всегда есть возможности для улучшения.</p>
+        <div class="flex lg:flex-row flex-col justify-between mt-[56px] gap-[78px]">
+            <div class="flex lg:w-[48%]">
+                <ul class="flex flex-col gap-[30px]">
+                    <li class="about_items flex flex-col pl-16 relative before:absolute before:top-0 before:left-0 before:content-[url('../assets/img/icon/awards.svg')]">
+                        <span class="text-lg">Отмеченное наградами ПО</span>
+                        <p class="text-secondary mt-[10px]">Всемирно известное программное обеспечение, признанное государственными учреждениями, инновационными группами и техническими организациями</p>
+                    </li>
+                    <li class="about_items flex flex-col pl-16 relative before:absolute before:top-0 before:left-0 before:content-[url('../assets/img/icon/approve.svg')]">
+                        <span class="text-lg">Большой потенциал ПО</span>
+                        <p class="text-secondary mt-[10px]">Входит в топ-25 самых многообещающих стартапов ConTech по версии Cemex Ventures, Moscow Consulting Group, BuiltWorld и PwC</p>
+                    </li>
+                    <li class="about_items flex flex-col pl-16 relative before:absolute before:top-0 before:left-0 before:content-[url('../assets/img/icon/leaders.svg')]">
+                        <span class="text-lg">Выбор лидеров рынка</span>
+                        <p class="text-secondary mt-[10px]">Рекомендуемый поставщик технологий для 3 из 10 ведущих генеральных подрядчиков в Европе</p>
+                    </li>
+                    <li class="about_items flex flex-col pl-16 relative before:absolute before:top-0 before:left-0 before:content-[url('../assets/img/icon/development.svg')]">
+                        <span class="text-lg">Устойчивое развитие и безопасность</span>
+                        <p class="text-secondary mt-[10px]">Способствует снижению выбросов CO2 и повышает безопасность на месте</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="about_right flex bg-[#F6F8F9] h-fit rounded-[5px] md:px-10 px-5 md:py-[45px] py-6 md:pb-[56px] pb-8 md:pr-[92px] pr-10 lg:w-[52%]">
+                <div class="swiper">
+                    <div class="swiper-wrapper pb-7">
+                        <div class="swiper-slide">
+                            <div class="flex flex-col gap-7 pl-5 xs:pl-10 pt-4 xs:pb-7 pb-3 relative before:absolute before:top-0 before:left-0 before:content-[url('../assets/img/icon/check.png')] before:-z-10">
+                                <p class="xl:text-[30px] xs:text-2xl text-lg xl:leading-[48px]">Мы видим огромный потенциал в таких решениях, как СтройКонтроль, и хотим использовать их для 
+                                    улучшения наших строительных процессов.
+                                </p>
+                                <div class="flex xs:flex-row flex-col items-center gap-2">
+                                    <img src="/DeliveryBuildingMaterials/src/assets/img/slider/photo.png" alt="">
+                                    <div class="flex flex-col xs:items-start items-center">
+                                        <span>Волков Матвей</span>
+                                        <span class="text-secondary xs:text-start text-center">Генеральный директор ООО “СпецСтрой”</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex flex-col gap-7 pl-5 xs:pl-10 pt-4 xs:pb-7 pb-3 relative before:absolute before:top-0 before:left-0 before:content-[url('../assets/img/icon/check.png')] before:-z-10">
+                                <p class="xl:text-[30px] xs:text-2xl text-lg xl:leading-[48px]">Мы видим огромный потенциал в таких решениях, как СтройКонтроль, и хотим использовать их для 
+                                    улучшения наших строительных процессов.
+                                </p>
+                                <div class="flex xs:flex-row flex-col items-center gap-2">
+                                    <img src="/DeliveryBuildingMaterials/src/assets/img/slider/photo.png" alt="">
+                                    <div class="flex flex-col xs:items-start items-center">
+                                        <span>Волков Матвей</span>
+                                        <span class="text-secondary xs:text-start text-center">Генеральный директор ООО “СпецСтрой”</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination xs:text-start text-center xs:pl-10 pl-5 bottom-auto"></div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-wrap justify-evenly gap-x-[100px] gap-y-10 mt-[127px]" id="awards">
+            <div class="awards_items flex flex-col items-center justify-center max-w-[126px]">
+                <img src="/DeliveryBuildingMaterials/src/assets/img/partners/machine.png" alt="">
+                <p class="mt-8 text-center text-secondary grow">50 лучших инструментов ConTech</p>
+            </div>
+            <div class="awards_items flex flex-col items-center justify-center max-w-[164px]">
+                <img src="/DeliveryBuildingMaterials/src/assets/img/partners/world.png" alt="">
+                <p class="mt-8 text-center text-secondary grow">25 лучших стартапов ConTech в ЕС</p>
+            </div>
+            <div class="awards_items flex flex-col items-center justify-center max-w-[164px]">
+                <img src="/DeliveryBuildingMaterials/src/assets/img/partners/content.png" alt="">
+                <p class="mt-8 text-center text-secondary grow">50 лучших стартапов Global ConTech</p>
+            </div>
+            <div class="awards_items flex flex-col items-center justify-center max-w-[184px]">
+                <img src="/DeliveryBuildingMaterials/src/assets/img/partners/proptech.png" alt="">
+                <p class="mt-8 text-center text-secondary grow">2018 - 50 лучших стартапов ЕС PropTech</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container bg-[url('../assets/img/bg/bg3.png')] rounded-md bg-cover bg-center bg-no-repeat py-[117px] lg:mt-[144px] md:mt-[100px] mt-16 px-10 overflow-x-hidden" id="connection">
+        <h2 class="lg:text-[48px] md:text-4xl text-2xl md:leading-[64px] text-center">Готовы оптимизировать логистику доставки для вашего сложного проекта?</h2>
+        <div class="flex xs:flex-row flex-col justify-center gap-4 mt-[54px]">
+            <a href="#" class="flex justify-center hover:text-darkBlue hover:bg-transparent border-[1px] border-darkBlue transition-all duration-300 text-[#fff] bg-darkBlue px-6 py-3 rounded-[4px] xs:w-fit w-full">Заказать демо</a>
+            <a href="#" class="flex justify-center hover:bg-transparent transition-all duration-300 text-darkBlue bg-[#fff] px-6 py-3 rounded-[4px] border border-[#DADEDF] xs:w-fit w-full">Связаться с нами</a>
+        </div>
+    </section>
+
+    <a href="#" id="scroll_top" title="Наверх"></a>
+
+    <footer class="container flex flex-col lg:pt-[150px] md:pt-[100px] pt-16 overflow-x-hidden">
+        <div class="flex xs:flex-row flex-col xs:gap-[120px] gap-10">
+            <div class="flex flex-col max-w-[350px] lg:w-[350px]">
+                <a href="#" class="flex gap-2 items-center mb-[22px]">
+                    <img src="/DeliveryBuildingMaterials/src/assets/img/icon/logo-footer.png" alt="">
+                    <span>СтройКонтроль</span>
+                </a>
+                <div class="flex flex-col text-[15px] text-[#72787D]">
+                    <span>г. Москва</span>
+                    <span>Пресненская наб., 88, оф. 527</span>
+                </div>
+                <div class="flex flex-col text-base text-[#72787D] mt-[10px]">
+                    <a href="mailto:info@stroycontrol.ru" class="w-fit">info@stroycontrol.ru</a>
+                    <a href="tel:+7 (945) 123-45-67" class="w-fit">+7 (945) 123-45-67</a>
+                </div>
+                <a href="#" class="w-fit group">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-5 w-6 h-6 fill-[#73787C] group-hover:fill-blue-500 group-hover:opacity-100 opacity-50">
+                        <path d="M12 0C5.39999 0 0 5.40964 0 12.0723C0 18.0964 4.39199 23.0964 10.128 24V15.5663H7.07999V12.0723H10.128V9.40964C10.128 6.38554 11.916 4.72289 14.664 4.72289C15.972 4.72289 17.34 4.95181 17.34 4.95181V7.92771H15.828C14.34 7.92771 13.872 8.85542 13.872 9.80723V12.0723H17.208L16.668 15.5663H13.872V24C16.6997 23.5516 19.2746 22.103 21.1319 19.9157C22.9892 17.7284 24.0064 14.9466 24 12.0723C24 5.40964 18.6 0 12 0Z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-2 xs:grid-cols-1 md:gap-x-[120px] gap-y-10">
+                <div class="flex flex-col w-fit">
+                    <h3 class="flex mb-[22px]">Наш продукт</h3>
+                    <ul class="flex flex-col gap-2 text-[#72787D] text-[15px]">
+                        <li><a href="#">Процесс</a></li>
+                        <li><a href="#">Продукция</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="flex mb-[22px]">Обслуживание</h3>
+                    <ul class="flex flex-col gap-2 text-[#72787D] text-[15px]">
+                        <li><a href="#">Клиенты</a></li>
+                        <li><a href="#">Надёжность</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col">
+                    <h3 class="flex mb-[22px]">Компания</h3>
+                    <ul class="flex flex-col gap-2 text-[#72787D] text-[15px]">
+                        <li><a href="#">О нас</a></li>
+                        <li><a href="#">Связаться с нами</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="flex md:flex-row flex-col md:justify-between justify-center items-center lg:mt-[120px] md:mt-20 mt-[50px] border-t-[1px] border-[#DADEDF] py-8">
+            <span class="text-[#72787D] xs:text-start text-center">© 2020 СтройКонтроль, Все права защищены.</span>
+            <a href="#" class="text-[#72787D]">Политика конфиденциальности</a>
+        </div>
+    </footer>
+
+    
+<script src="./src/assets/libs/jquery.js"></script>
+<script src="./src/assets/libs/gsap.js"></script>
+<script src="./src/assets/libs/scrollTrigger.js"></script>
+<script src="./src/assets/libs/swiper.js"></script>
+<script src="./src/assets/js/animations.js"></script>
+<script src="./src/assets/js/custom.js"></script>
+<script src="./src/assets/js/slider.js"></script>
+<script src="./src/js/main.js"></script>
+</body>
+</html>

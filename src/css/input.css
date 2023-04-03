@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    @apply max-[1920px]:max-w-[1096px] mx-auto
+}
+
+.title {
+    @apply md:text-[32px] text-2xl text-darkBlue md:leading-[48px]
+}

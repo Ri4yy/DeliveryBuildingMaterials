@@ -47,3 +47,35 @@ $(function(){
 		return false;
 	});
 });
+
+// Шапка
+if ($(window).width() >= '1170') { 
+    $(function() {
+        let header = $('#main');
+        
+        $(window).scroll(function() {
+            if($(this).scrollTop() >= 60) {
+                header.addClass('header_fixed');
+            } else {
+                header.removeClass('header_fixed');
+            }
+
+            if($(this).scrollTop() >= 60) {
+                header.css({
+                'background': '#fff',
+                'transition': '.3s',
+                'z-index': '55',
+                'box-shadow': '0px 4px 8px -1px rgba(0, 0, 0, 0.25)',
+                'padding': '15px 32px'
+                });
+            } else {
+                header.css({
+                'background': 'transparent',
+                'transition': '.3s',
+                'box-shadow': 'none',
+                'padding': '26px 32px'
+                });
+            }
+        });
+    });
+};

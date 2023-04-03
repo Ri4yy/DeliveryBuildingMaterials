@@ -27,3 +27,9 @@
 .font-inter {
     font-family: 'Inter', sans-serif;
 }
+
+.header_fixed {
+    position: sticky;
+    left: 0;
+    top: 0;
+  }

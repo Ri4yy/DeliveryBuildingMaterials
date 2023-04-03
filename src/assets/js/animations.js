@@ -4,41 +4,41 @@ const tl = gsap.timeline();
 const laptopScreen = window.matchMedia('(min-width: 1024px)');
 
 if(laptopScreen.matches) {
-    tl.fromTo(
-        '.logo', {
-            y: -50,
-            opacity: 0
-        }, 
-        {
-            y: 0,
-            opacity: 1,
-            duration: 1
-        }
-    )
-    .fromTo(
-        '.nav_list li', {
-            y: -50,
-            opacity: 0,
-        }, 
-        {
-            y: 0,
-            opacity: 1,
-            duration: .5,
-            stagger: .5,
-        }
-    )
-    .fromTo(
-        '.header_order', {
-            y: -50,
-            opacity: 0,
-        }, 
-        {
-            y: 0,
-            opacity: 1,
-            duration: .5,
-        },
-        5
-    )
+    // tl.fromTo(
+    //     '.logo', {
+    //         y: -50,
+    //         opacity: 0
+    //     }, 
+    //     {
+    //         y: 0,
+    //         opacity: 1,
+    //         duration: 1
+    //     }
+    // )
+    // .fromTo(
+    //     '.nav_list li', {
+    //         y: -50,
+    //         opacity: 0,
+    //     }, 
+    //     {
+    //         y: 0,
+    //         opacity: 1,
+    //         duration: .5,
+    //         stagger: .5,
+    //     }
+    // )
+    // .fromTo(
+    //     '.header_order', {
+    //         y: -50,
+    //         opacity: 0,
+    //     }, 
+    //     {
+    //         y: 0,
+    //         opacity: 1,
+    //         duration: .5,
+    //     },
+    //     5
+    // )
 
     gsap.to('.main_title', {
         scrollTrigger: {
